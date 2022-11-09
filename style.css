@@ -32,8 +32,8 @@ main .container, .card{
 
     margin: auto;
 
-    width: 500px;
-    height: 400px;
+    width: 550px;
+    height: 750px;
     background-color: white;
     border-bottom: 20px solid rgb(91, 143, 112);
     border-radius: 10px;
@@ -58,7 +58,7 @@ main .add input:focus{
     background-color: rgba(91, 143, 112, 0.250);
 }
 
-main .add button{
+main button{
     width: 80px;
     height: 30px;
     border-radius: 10px;
@@ -70,18 +70,22 @@ main .add button{
     transition: background 0.5s, border 0.5s;
 }
 
-main .add button:hover{
+main button:hover{
     border: 2px solid rgb(71, 114, 88);
     background-color: rgb(71, 114, 88);
 }
 
-main .list{
+main .content{
+    /*visibility: hidden;*/
+}
+
+main .content ul li{
     border-bottom: 2px solid rgb(91, 143, 112);
     background-color: rgb(235, 235, 235);
     border-radius: 10px;
     width: 350px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
 
     display: flex;
     align-items: center;
@@ -90,12 +94,36 @@ main .list{
     padding: 5px;
 }
 
-main .list label{
+main .content input{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+main .content label{
     margin-top: 5px;
 }
 
-main .btns img{
+main img{
     width: 24px;
     margin-top: 5px;
     cursor: pointer;
+}
+
+main .bot{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 95%;
+    left: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+}
+
+main .bot #total{
+    color: rgb(91, 143, 112);
+    font-weight: bold;
 }

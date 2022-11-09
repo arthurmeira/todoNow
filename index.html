@@ -21,29 +21,30 @@
             <div class="card">
 
                 <div class="add">
-                    <input type="text" placeholder="Task here ...">
-                    <button>Add</button>
+                    <input id="input" type="text" placeholder="Task here ...">
+                    <button id="add">Add</button>
                 </div><!--add-->
                 <hr>
 
-                <div class="list">
-                    <label class="">Tarefa 1</label>
-                    <div class="btns">
-                        <img src="images/editar.png" alt="edit">
-                        <img src="images/remover.png" alt="remove">
-                    </div><!--btns-->
-                </div><!--list--> 
+                <div class="content">
+                    <ul id="list">
+                        <li id="li">
+                            <input id="cBox" type="checkbox">
+                            <label id="task"></label>
+                            <div class="btns">
+                                <img id="remove" src="images/remover.png">
+                            </div><!--btns-->
+                        </li>
+                    </ul>
+                </div><!--content--> 
 
+                <div class="bot">
+                    <span>You have <span id="total">1</span> pending tasks</span>
+                    <button id="cAll">Clear All</button>
+                </div>
             </div><!--card-->
         </div><!--container-->
     </main>
-
-    <footer>
-        <div class="bot">
-
-        </div><!--bot-->
-    </footer>
-
     <script src="script.js"></script>
 
 <!--meiradev
